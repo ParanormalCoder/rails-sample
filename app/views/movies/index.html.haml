@@ -4,7 +4,7 @@
 %table#movies
   %thead
     %tr
-      %th Movie Title
+      %th{class: @class_title}= link_to('Movie Title', html_options = {:action => movie_path, :sort => "title"})
       %th Rating
       %th Release Date
       %th More Info
